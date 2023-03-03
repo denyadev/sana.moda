@@ -8,9 +8,9 @@ const Footer = () => {
             <div className="border-l border-[#373737]" />
             <div className="border-l border-r border-[#373737]" />
         </div> */}
-        <h1 className="font-extrabold text-[white] text-4xl">kal<span className="text-theme">.</span>oyan</h1>
+        <h1 className="font-extrabold text-[white] text-4xl">sana<span className="text-theme">.</span>moda</h1>
         <p className="text-xs text-center">by denyadev</p>
-        <p className="text-xs text-right">© kal.oyan 2022. All Rights Reserved.</p>
+        <p className="text-xs text-right">© sana.moda 2022. All Rights Reserved.</p>
     </footer>
   )
 }

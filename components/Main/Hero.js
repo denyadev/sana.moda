@@ -25,7 +25,7 @@ const Hero = () => {
                 {/* Text Block */}
                 <div className="space-y-10 mt-32">
                     <h2 className="text-5xl text-white uppercase tracking-[20px] font-oswald -mr-5">Modern Hotel In London</h2>
-                    <h3 className="text-lg text-white font-normal ml-[500px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, while being commonly used everywhere.</h3>
+                    <h3 className="text-lg text-white font-normal ml-[500px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, while being commonly used everywhere.</h3>
                     <button className="text-lgl text-white bg-theme font-mont font-bold py-3 px-8 rounded-full uppercase tracking-widest">Look More &#8594;</button>
                 </div>
 
