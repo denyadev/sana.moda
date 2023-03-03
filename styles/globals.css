@@ -1,26 +1,39 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .header {
+        @apply container mx-auto py-12 fixed text-white z-50 uppercase tracking-[5px] font-oswald text-[13px] font-[300] left-0 right-0 top-0;
+    }
+
+    .header-active {
+        @apply container mx-auto py-12 fixed text-white z-50 uppercase tracking-[5px] font-oswald text-[13px] font-[300] left-0 right-0 top-0 bg-[#242424]/90;
+    }
+
+    .contactInput {
+        @apply outline-none bg-[#323232] rounded-lg border-b-4 border-[#242424] px-8 py-4 text-white placeholder-gray-300 transition-all focus:text-white focus:border-theme/40
+    }
+
+    .card-zoom {
+        @apply relative flex items-center justify-center overflow-hidden;
+    }
+
+    .card-zoom-image {
+        @apply absolute w-full h-full transition-all duration-zoom ease-out transform bg-center bg-cover;
+    }
+    
+    .card-zoom-text {
+        @apply absolute text-5xl font-black transition-all duration-zoom ease-in-out transform scale-150 text-gray-50;
+    }
+
+    .card-zoom:hover .card-zoom-image {
+        @apply scale-125;
+    }
+
+    .card-zoom:hover .card-zoom-text {
+        @apply scale-100;
+    }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
